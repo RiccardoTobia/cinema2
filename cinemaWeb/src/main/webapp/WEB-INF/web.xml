@@ -1,0 +1,37 @@
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+     version="3.1">
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>GetTuttiFilm</servlet-name>
+  	<display-name>GetTuttiFilm</display-name>
+  	<description></description>
+  	<servlet-class>org.zefiro.cinemaweb.servlet.GetTuttiFilm</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>GetInfoFilm</servlet-name>
+  	<display-name>GetInfoFilm</display-name>
+  	<description></description>
+  	<servlet-class>org.zefiro.cinemaweb.servlet.GetInfoFilm</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>AcquistoBiglietti</servlet-name>
+  	<display-name>AcquistoBiglietti</display-name>
+  	<description></description>
+  	<servlet-class>org.zefiro.cinemaweb.servlet.AcquistoBiglietti</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>GetTuttiFilm</servlet-name>
+  	<url-pattern>/GetTuttiFilm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>GetInfoFilm</servlet-name>
+  	<url-pattern>/GetInfoFilm</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>AcquistoBiglietti</servlet-name>
+  	<url-pattern>/AcquistoBiglietti</url-pattern>
+  </servlet-mapping>
+</web-app>
